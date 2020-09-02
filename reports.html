@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ReportsUI</title>
+    <link rel="stylesheet" href="css/reports.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/const.js" type="text/javascript"></script>
+	<script src="js/reports.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="header-div">
+		<h1 id="header-message"/>
+		<h6 id="reports-summary"/>
+	</div>
+	<div id="add-report-error" class="alert alert-danger">
+		<svg style="margin-right:4%;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+		</svg>
+		<span id="add-report-error-message"></span>
+	</div>
+	<div id="reports">
+		<div id="add-report-div">
+			<div id="add-report-form">
+				<input id="report-name" class="add-report-input" placeholder="Report name" type="text" class="form-control">
+				<input id="report-type" class="add-report-input"placeholder="Report type" type="text" class="form-control">
+				<button id="add-report-button" class="btn btn-dark" type="button">Add</button>
+			</div>
+			<div id="add-report-icon">
+				<button id="add-report-icon-button" type="button" class="btn btn-outline-dark">
+					<svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+						<path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+						<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div id="reports-table"/>
+	</div>
+</body>
+</html>
